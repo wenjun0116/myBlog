@@ -61,7 +61,7 @@ export function resetUserPwd(userId, password) {
   }
   return request({
     url: '/system/user/resetPwd',
-    method: 'put',
+    method: 'post',
     data: data
   })
 }
@@ -90,7 +90,7 @@ export function importTemplate() {
 // 查询用户个人信息
 export function getUserProfile() {
   return request({
-    url: '/system/user/profile',
+    url: '/admin/user/get',
     method: 'get'
   })
 }
@@ -98,8 +98,8 @@ export function getUserProfile() {
 // 修改用户个人信息
 export function updateUserProfile(data) {
   return request({
-    url: '/system/user/profile',
-    method: 'put',
+    url: '/admin/user/update',
+    method: 'post',
     data: data
   })
 }
@@ -111,8 +111,8 @@ export function updateUserPwd(oldPassword, newPassword) {
     newPassword
   }
   return request({
-    url: '/system/user/profile/updatePwd',
-    method: 'put',
+    url: '/admin/user/updatePwd',
+    method: 'post',
     params: data
   })
 }

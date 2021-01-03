@@ -25,7 +25,11 @@ export default {
       if (this.user.newPassword !== value) {
         callback(new Error("两次输入的密码不一致"));
       } else {
-        callback();
+        if (this.user.newPassword === this.user.oldPassword) {
+          callback(new Error("新密码不能与旧密码重复"));
+        }else {
+          callback();
+        }
       }
     };
     return {

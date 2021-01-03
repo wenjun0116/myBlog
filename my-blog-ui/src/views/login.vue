@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">协议供货后台管理系统</h3>
+      <h3 class="title">秋枫博客后台管理系统</h3>
       <el-form-item prop="username">
         <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="账号">
           <svg-icon slot="prefix" icon-class="user" class="el-input__icon input-icon" />
@@ -29,7 +29,7 @@
           <svg-icon slot="prefix" icon-class="validCode" class="el-input__icon input-icon" />
         </el-input>
         <div class="login-code">
-          <img :src="codeUrl" @click="getCode" class="login-code-img"/>
+          <img src="http://localhost:8080/captchaImage"  class="login-code-img"/>
         </div>
       </el-form-item>
       <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
@@ -93,16 +93,16 @@ export default {
     }
   },
   created() {
-    this.getCode();
+    // this.getCode();
     this.getCookie();
   },
   methods: {
-    getCode() {
-      getCodeImg().then(res => {
-        this.codeUrl = "data:image/gif;base64," + res.img;
-        this.loginForm.uuid = res.uuid;
-      });
-    },
+    // getCode() {
+    //   getCodeImg().then(res => {
+    //     this.codeUrl = "data:image/gif;base64," + res.img;
+    //     this.loginForm.uuid = res.uuid;
+    //   });
+    // },
     getCookie() {
       const username = Cookies.get("username");
       const password = Cookies.get("password");
@@ -128,12 +128,15 @@ export default {
           }
           this.$store
             .dispatch("Login", this.loginForm)
-            .then(() => {
-              this.$router.push({ path: this.redirect || "/" });
+            .then(() => 
+            {
+              this.loading = false
+              // this.$router.push({ path: this.redirect || "/" });
+              this.$router.push({ path: "/index" });
             })
             .catch(() => {
               this.loading = false;
-              this.getCode();
+              // this.getCode();
             });
         }
       });

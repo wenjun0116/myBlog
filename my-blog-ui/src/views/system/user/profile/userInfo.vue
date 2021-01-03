@@ -3,8 +3,8 @@
     <el-form-item label="用户昵称" prop="nickName">
       <el-input v-model="user.nickName" />
     </el-form-item>
-    <el-form-item label="手机号码" prop="phonenumber">
-      <el-input v-model="user.phonenumber" maxlength="11" />
+    <el-form-item label="手机号码" prop="phonen">
+      <el-input v-model="user.phone" maxlength="11" />
     </el-form-item>
     <el-form-item label="邮箱" prop="email">
       <el-input v-model="user.email" maxlength="50" />
@@ -13,7 +13,7 @@
       <el-radio-group v-model="user.sex">
         <el-radio label="0">男</el-radio>
         <el-radio label="1">女</el-radio>
-      </el-radio-group>
+      </el-radio-group> 
     </el-form-item>
     <el-form-item>
       <el-button type="primary" size="mini" @click="submit">保存</el-button>

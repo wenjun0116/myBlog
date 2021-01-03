@@ -244,7 +244,7 @@ export default {
         // 是否更新已经存在的用户数据
         updateSupport: 0,
         // 设置上传的请求头部
-        headers: { Authorization: "Bearer " + getToken() },
+        headers: { Authorization: getToken() },
         // 上传的地址
         url: process.env.VUE_APP_BASE_API + "/system/user/importData",
       },

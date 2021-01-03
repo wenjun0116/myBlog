@@ -4,6 +4,7 @@ import { Message } from 'element-ui'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { getToken } from '@/utils/auth'
+// import { replace } from 'core-js/fn/symbol'
 
 NProgress.configure({ showSpinner: false })
 

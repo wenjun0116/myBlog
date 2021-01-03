@@ -22,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,7 +33,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../maven/apache-maven" />
+        <option name="mavenHome" value="E:\maven\apache-maven" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -43,10 +44,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mybatis-generator-gui-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,30 +61,69 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.39885056" />
-    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.qiufeng.common.utils" />
+      <recent name="com.qiufeng.controller.admin" />
+      <recent name="com.qiufeng.common.model" />
+      <recent name="com.qiufeng.service.user.impl" />
+      <recent name="com.qiufeng.security" />
+      <recent name="com.qiufeng.interceptor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\java\idea\myblog\my-blog-java\src\main\java\com\qiufeng\config" />
+      <recent name="E:\code\java\idea\myblog\my-blog-java\src\main\java\com\qiufeng" />
       <recent name="E:\code\java\idea\myblog\my-blog-java\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.MyBlogMain">
+    <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qiufeng.common.utils.JwtUtils" />
+      <module name="my-blog-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiufeng.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyBlogMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="my-blog-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiufeng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qiufeng.MyBlogMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MyBlogMain" />
+        <item itemvalue="Application.JwtUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,6 +135,13 @@
       <updated>1608973221073</updated>
       <workItem from="1608973222167" duration="5889000" />
       <workItem from="1609053106525" duration="3901000" />
+      <workItem from="1609068932615" duration="356000" />
+      <workItem from="1609135796487" duration="11082000" />
+      <workItem from="1609149046187" duration="5834000" />
+      <workItem from="1609222467588" duration="10973000" />
+      <workItem from="1609308710101" duration="11652000" />
+      <workItem from="1609394902881" duration="8071000" />
+      <workItem from="1609568115700" duration="10444000" />
     </task>
     <servers />
   </component>
@@ -110,13 +161,81 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="0" key="SettingsEditor" timestamp="1608973403121">
+    <state x="400" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609144463767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608973403121" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1609056097384">
+    <state x="400" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1609144463767" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1609581166113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1609056097384" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1609581166113" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609575082256">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609575082256" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609573035262">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609573035262" />
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1609581726679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609581726679" />
+    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1609581726678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609581726678" />
+    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1609581726678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609581726678" />
+    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1609581726678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609581726678" />
+    <state width="1323" height="196" key="GridCell.Tab.1.bottom" timestamp="1609581726679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609581726679" />
+    <state width="1323" height="196" key="GridCell.Tab.1.center" timestamp="1609581726679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1609581726679" />
+    <state width="1323" height="196" key="GridCell.Tab.1.left" timestamp="1609581726679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1609581726679" />
+    <state width="1323" height="196" key="GridCell.Tab.1.right" timestamp="1609581726679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="196" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1609581726679" />
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1609148961093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609148961093" />
+    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1609148961093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1609148961093" />
+    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1609148961093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1609148961093" />
+    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1609148961093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1609148961093" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1609320050839">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609320050839" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1609310586942">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609310586942" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1609402499154">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1609402499154" />
   </component>
 </project>

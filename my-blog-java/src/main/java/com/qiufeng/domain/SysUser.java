@@ -26,7 +26,7 @@ public class SysUser extends BaseModel {
     private Long phone;
 
     /** 用户性别：0表示男，1表示女，2表示未知 */
-    private Integer sex;
+    private char sex;
 
     /** 用户头像地址 */
     private String avatar;

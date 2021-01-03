@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiufeng.mapper.user.SysUserRoleMapper">
+
+    <resultMap id="BaseResult" type="com.qiufeng.domain.SysUserRole">
+        <id     column="user_id"            property="userId"       />
+        <result column="role_id"            property="roleId"       />
+    </resultMap>
+
+    <sql id="SysUserRoleSql">
+        `user_id`,
+        `role_id`
+    </sql>
+
+    <insert id="saveSysUserRole" parameterType="SysUserRole">
+        INSERT INTO `sys_user_role`(
+            `user_id`,
+            `role_id`
+        )
+        VALUES(
+            #{userId},
+            #{roleId}
+        )
+    </insert>
+
+    <delete id="deleteSysUserRole" parameterType="LONG">
+        DELETE FROM `sys_user_role`
+        WHERE `user_id` = #{userId}
+    </delete>
+
+    <select id="selectSysUserRoleBySysUserId" resultMap="BaseResult">
+        SELECT <include refid="SysUserRoleSql"/>
+        FROM `sys_user_role`
+        WHERE `user_id` = #{userId}
+    </select>
+
+    <select id="selectSysUserRoleBySysRoleId" resultMap="BaseResult">
+        SELECT <include refid="SysUserRoleSql"/>
+        FROM `sys_user_role`
+        WHERE `role_id` = #{roleId}
+    </select>
+
+</mapper>

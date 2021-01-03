@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "my-blog-java",
+      "type": "com.qiufeng.config.MyBlogConfig",
+      "sourceType": "com.qiufeng.config.MyBlogConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "my-blog-java.copyright-year",
+      "type": "java.lang.String",
+      "description": "版本年份",
+      "sourceType": "com.qiufeng.config.MyBlogConfig"
+    },
+    {
+      "name": "my-blog-java.name",
+      "type": "java.lang.String",
+      "description": "项目名称",
+      "sourceType": "com.qiufeng.config.MyBlogConfig"
+    },
+    {
+      "name": "my-blog-java.profile",
+      "type": "java.lang.String",
+      "description": "上传路劲",
+      "sourceType": "com.qiufeng.config.MyBlogConfig"
+    },
+    {
+      "name": "my-blog-java.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.qiufeng.config.MyBlogConfig"
+    }
+  ],
+  "hints": []
+}

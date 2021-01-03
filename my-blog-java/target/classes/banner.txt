@@ -1,0 +1,4 @@
+Application Version: ${my-blog-java.version}
+Spring Boot Version: ${spring-boot.version}
+
+e-mall-java Application starting...

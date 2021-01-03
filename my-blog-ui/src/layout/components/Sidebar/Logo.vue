@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: '协议供货后台管理系统',
+      title: '秋枫博客后台管理系统',
       logo: logoImg
     }
   }
