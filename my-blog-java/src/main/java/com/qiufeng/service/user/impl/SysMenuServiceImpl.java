@@ -91,6 +91,7 @@ public class SysMenuServiceImpl implements SysMenuService {
      */
     @Override
     public List<RouterVo> buildMenus(List<SysMenu> menus) {
+        menus = getChildren(menus);
         LinkedList<RouterVo> routers = new LinkedList<>();
         for (SysMenu menu : menus) {
             if (menu.getPath() != null && !menu.getPath().equals("")) {
@@ -161,8 +162,8 @@ public class SysMenuServiceImpl implements SysMenuService {
     {
         String routerPath = menu.getPath();
         // 非外链并且是一级目录（类型为目录）
-        if (0 == menu.getParentId().intValue() && UserConstants.TYPE_DIR.equals(menu.getMenuType())
-                && UserConstants.NO_FRAME.equals(menu.getIsFrame()))
+        if (menu.getParentId().intValue() == 0 && UserConstants.TYPE_DIR.equals(menu.getMenuType())
+                && UserConstants.NO_FRAME.equals(menu.getIsFrame().toString()))
         {
             routerPath = "/" + menu.getPath();
         }
@@ -200,6 +201,21 @@ public class SysMenuServiceImpl implements SysMenuService {
     {
         return menu.getParentId().intValue() == 0 && UserConstants.TYPE_MENU.equals(menu.getMenuType())
                 && menu.getIsFrame().equals(UserConstants.NO_FRAME);
+    }
+
+    /**
+     * 递归获取子孙节点
+     * @return
+     */
+    public List<SysMenu> getChildren(List<SysMenu> menus) {
+        for (SysMenu menu:menus) {
+            List<SysMenu> childrenMenus = menuMapper.selectSysMenuChildren(menu.getMenuId());
+            if (childrenMenus.size() != 0) {
+                menu.setChildren(childrenMenus);
+                getChildren(menu.getChildren());
+            }
+        }
+        return menus;
     }
 
     /**

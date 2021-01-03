@@ -157,11 +157,10 @@ public class UserController {
                 List<SysMenu> menus = new ArrayList<>();
                 for (SysRoleMenu roleMenu:sysRoleMenus) {
                     SysMenu menu = sysMenuService.selectByPrimaryKey(roleMenu.getMenuId());
-                    if (!UserConstants.TYPE_BUTTON.equals(menu.getMenuType())) {
+                    if (menu.getParentId() == 0) {
                         menu.setChildren(sysMenuService.selectSysMenuChildren(menu.getMenuId()));
                         menus.add(menu);
                     }
-                    System.out.println("menu===============>" + menu);
                 }
                 return AjaxResult.success(sysMenuService.buildMenus(menus));
             }
